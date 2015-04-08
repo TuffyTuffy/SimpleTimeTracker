@@ -57,7 +57,7 @@
             this.comboBoxLabel.Name = "comboBoxLabel";
             this.comboBoxLabel.Size = new System.Drawing.Size(258, 21);
             this.comboBoxLabel.TabIndex = 0;
-            this.comboBoxLabel.ValueMember = "Name";
+            this.comboBoxLabel.ValueMember = "Value";
             // 
             // textBoxWork
             // 

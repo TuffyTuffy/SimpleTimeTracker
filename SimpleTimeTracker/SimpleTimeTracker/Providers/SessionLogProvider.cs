@@ -17,15 +17,22 @@ namespace SimpleTimeTracker.Providers
                 logPath = Environment.CurrentDirectory;
             }
 
-            _logFilePath = Path.Combine(logPath, "Log.csv");
+            _logFilePath = Path.Combine(logPath, "SimpleTimeTracker.csv");
         }
 
         public void Log(SessionInfo session)
         {
             if (session == null) throw new ArgumentNullException("session");
 
+            var addHeader = !File.Exists(_logFilePath);
+
             using (var sw = new StreamWriter(_logFilePath, true))
             {
+                if (addHeader)
+                {
+                    sw.WriteLine("Start Date, Duration, Interruptions, Label, Comments");
+                }
+
                 sw.WriteLine(string.Format(string.Format("{0},{1}h:{2}m:{3}s,{4},{5},\"{6}\"", 
                     session.StartDate, 
                     session.Duration.Hours, 

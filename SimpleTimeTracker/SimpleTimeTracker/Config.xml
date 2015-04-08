@@ -2,7 +2,10 @@
   <Log LogPath="">
   </Log>
   <Labels>
+    <Label>Global</Label>
     <Label>Team</Label>
     <Label>Development</Label>
+    <Label>Expedient</Label>
+    <Label>Recruiting</Label>
   </Labels>
 </Config>

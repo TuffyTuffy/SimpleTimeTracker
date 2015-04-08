@@ -11,7 +11,7 @@ namespace SimpleTimeTracker.Providers
         public SessionLogProvider(IConfigProvider cfgProvider)
         {
             var logPath = cfgProvider.GetLogInfo().LogPath;
-            if (string.IsNullOrEmpty(logPath) || !File.Exists(logPath))
+            if (string.IsNullOrEmpty(logPath))
             {
                 //Use the default
                 logPath = Environment.CurrentDirectory;

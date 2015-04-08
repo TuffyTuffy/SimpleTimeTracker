@@ -42,5 +42,29 @@ namespace SimpleTimeTracker
 
             Close();
         }
+
+        private void labelStop_Click(object sender, System.EventArgs e)
+        {
+            ActionStateValue = ActionState.Stop;
+            Close();
+        }
+
+        private void labelContinue_Click(object sender, System.EventArgs e)
+        {
+            ActionStateValue = ActionState.Continue;
+            Close();
+        }
+
+        private void labelMinimize_Click(object sender, System.EventArgs e)
+        {
+            ActionStateValue = ActionState.Minimize;
+            Close();
+        }
+
+        private void labelInterruption_Click(object sender, System.EventArgs e)
+        {
+            ActionStateValue = ActionState.Interruption;
+            Close();
+        }
     }
 }

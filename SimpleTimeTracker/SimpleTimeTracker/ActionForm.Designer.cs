@@ -28,61 +28,65 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.labelStop = new System.Windows.Forms.Label();
+            this.labelContinue = new System.Windows.Forms.Label();
+            this.labelMinimize = new System.Windows.Forms.Label();
+            this.labelInterruption = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // labelStop
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(40, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "(S)top";
+            this.labelStop.AutoSize = true;
+            this.labelStop.Location = new System.Drawing.Point(12, 9);
+            this.labelStop.Name = "labelStop";
+            this.labelStop.Size = new System.Drawing.Size(40, 15);
+            this.labelStop.TabIndex = 0;
+            this.labelStop.Text = "(S)top";
+            this.labelStop.Click += new System.EventHandler(this.labelStop_Click);
             // 
-            // label2
+            // labelContinue
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 34);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 15);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "(C)ontinue";
+            this.labelContinue.AutoSize = true;
+            this.labelContinue.Location = new System.Drawing.Point(12, 27);
+            this.labelContinue.Name = "labelContinue";
+            this.labelContinue.Size = new System.Drawing.Size(64, 15);
+            this.labelContinue.TabIndex = 0;
+            this.labelContinue.Text = "(C)ontinue";
+            this.labelContinue.Click += new System.EventHandler(this.labelContinue_Click);
             // 
-            // label3
+            // labelMinimize
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 58);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 15);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "(M)inimize";
+            this.labelMinimize.AutoSize = true;
+            this.labelMinimize.Location = new System.Drawing.Point(12, 45);
+            this.labelMinimize.Name = "labelMinimize";
+            this.labelMinimize.Size = new System.Drawing.Size(66, 15);
+            this.labelMinimize.TabIndex = 0;
+            this.labelMinimize.Text = "(M)inimize";
+            this.labelMinimize.Click += new System.EventHandler(this.labelMinimize_Click);
             // 
-            // label4
+            // labelInterruption
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 79);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(77, 15);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "(I)nterruption";
+            this.labelInterruption.AutoSize = true;
+            this.labelInterruption.Location = new System.Drawing.Point(12, 63);
+            this.labelInterruption.Name = "labelInterruption";
+            this.labelInterruption.Size = new System.Drawing.Size(77, 15);
+            this.labelInterruption.TabIndex = 0;
+            this.labelInterruption.Text = "(I)nterruption";
+            this.labelInterruption.Click += new System.EventHandler(this.labelInterruption_Click);
             // 
             // ActionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(97, 104);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(96, 88);
+            this.Controls.Add(this.labelInterruption);
+            this.Controls.Add(this.labelMinimize);
+            this.Controls.Add(this.labelContinue);
+            this.Controls.Add(this.labelStop);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "ActionForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Action";
+            this.Text = "Actions";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ActionForm_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -91,9 +95,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label labelStop;
+        private System.Windows.Forms.Label labelContinue;
+        private System.Windows.Forms.Label labelMinimize;
+        private System.Windows.Forms.Label labelInterruption;
     }
 }

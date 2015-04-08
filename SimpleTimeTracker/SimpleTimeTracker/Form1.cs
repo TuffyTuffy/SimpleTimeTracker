@@ -33,6 +33,7 @@ namespace SimpleTimeTracker
                 case CustomTimer.TimerState.Stopped:
                     textBoxWork.Clear();
                     textBoxWork.Enabled = true;
+                    textBoxWork.Focus();
                     buttonActions.Enabled = false;
                     _session.Duration = _timer.Elapsed;
                     GlobalFactory.SessionLogProvider.Log(_session);

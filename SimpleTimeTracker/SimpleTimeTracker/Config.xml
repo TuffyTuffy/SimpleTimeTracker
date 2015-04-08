@@ -1,0 +1,8 @@
+﻿<Config>
+  <Log LogPath="">
+  </Log>
+  <Labels>
+    <Label>Team</Label>
+    <Label>Development</Label>
+  </Labels>
+</Config>

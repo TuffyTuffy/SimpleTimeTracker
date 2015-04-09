@@ -52,10 +52,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBoxLabel.DisplayMember = "Name";
             this.comboBoxLabel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.28571F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxLabel.FormattingEnabled = true;
-            this.comboBoxLabel.Location = new System.Drawing.Point(12, 27);
+            this.comboBoxLabel.Location = new System.Drawing.Point(12, 30);
             this.comboBoxLabel.Name = "comboBoxLabel";
-            this.comboBoxLabel.Size = new System.Drawing.Size(258, 21);
+            this.comboBoxLabel.Size = new System.Drawing.Size(258, 26);
             this.comboBoxLabel.TabIndex = 0;
             this.comboBoxLabel.ValueMember = "Value";
             // 
@@ -63,7 +64,8 @@
             // 
             this.textBoxWork.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxWork.Location = new System.Drawing.Point(12, 80);
+            this.textBoxWork.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.28571F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxWork.Location = new System.Drawing.Point(12, 90);
             this.textBoxWork.Multiline = true;
             this.textBoxWork.Name = "textBoxWork";
             this.textBoxWork.Size = new System.Drawing.Size(260, 97);
@@ -73,18 +75,20 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.28571F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 15);
+            this.label1.Size = new System.Drawing.Size(47, 18);
             this.label1.TabIndex = 2;
             this.label1.Text = "Label:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 62);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.28571F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(12, 69);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 15);
+            this.label2.Size = new System.Drawing.Size(49, 18);
             this.label2.TabIndex = 3;
             this.label2.Text = "Work:";
             // 
@@ -92,7 +96,7 @@
             // 
             this.labelTime.AutoSize = true;
             this.labelTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTime.Location = new System.Drawing.Point(9, 181);
+            this.labelTime.Location = new System.Drawing.Point(12, 190);
             this.labelTime.Name = "labelTime";
             this.labelTime.Size = new System.Drawing.Size(137, 36);
             this.labelTime.TabIndex = 4;
@@ -101,9 +105,10 @@
             // buttonActions
             // 
             this.buttonActions.Enabled = false;
-            this.buttonActions.Location = new System.Drawing.Point(195, 191);
+            this.buttonActions.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.28571F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonActions.Location = new System.Drawing.Point(195, 200);
             this.buttonActions.Name = "buttonActions";
-            this.buttonActions.Size = new System.Drawing.Size(75, 23);
+            this.buttonActions.Size = new System.Drawing.Size(75, 26);
             this.buttonActions.TabIndex = 5;
             this.buttonActions.Text = "Actions";
             this.buttonActions.UseVisualStyleBackColor = true;
@@ -113,7 +118,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 225);
+            this.ClientSize = new System.Drawing.Size(284, 237);
             this.Controls.Add(this.buttonActions);
             this.Controls.Add(this.labelTime);
             this.Controls.Add(this.label2);

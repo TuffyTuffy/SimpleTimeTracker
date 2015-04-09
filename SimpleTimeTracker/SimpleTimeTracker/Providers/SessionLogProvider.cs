@@ -33,12 +33,12 @@ namespace SimpleTimeTracker.Providers
                     sw.WriteLine("Start Date, Duration, Interruptions, Label, Comments");
                 }
 
-                sw.WriteLine(string.Format(string.Format("{0},{1}h:{2}m:{3}s,{4},{5},\"{6}\"", 
+                sw.WriteLine(string.Format(string.Format("{0},{1},{2},{3},\"{4}\"", 
                     session.StartDate, 
-                    session.Duration.Hours, 
-                    session.Duration.Minutes, 
-                    session.Duration.Seconds, 
-                    session.Interruptions, session.Label, session.Comment.Replace("\"","\"\""))));
+                    session.Duration, 
+                    session.Interruptions, 
+                    session.Label, 
+                    session.Comment.Replace("\"","\"\""))));
             }
         }
     }
